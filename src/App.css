@@ -71,13 +71,15 @@ body {
 
 header {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   margin: 20px;
 }
 
 .header-control {
   display: flex;
   align-items: center;
+  position: absolute;
+  right: 3rem;
 }
 
 .moon-icon {
@@ -143,7 +145,7 @@ input:checked + .slider:before {
   background-position-x: 92%;
   background-position-y: 50%;
   background-size: 24px;
-  width: 90vw;
+  max-width: 90vw;
   padding: 10px 20px;
   font-size: var(--medium-heading);
   font-weight: 700;
