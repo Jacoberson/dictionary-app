@@ -2,10 +2,9 @@ import NewWindowIcon from "../images/icon-new-window.svg";
 
 export default function Definition() {
   return (
-    <section>
+    <section className="definition-section">
       <div className="part-of-speech">
         <h3>noun</h3>
-        <hr></hr>
       </div>
       <div className="meaning">
         <h4>Meaning</h4>

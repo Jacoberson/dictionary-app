@@ -190,3 +190,26 @@ input[type="search"]:not(:focus, :active)::-webkit-search-cancel-button {
 .play-button:hover {
   cursor: pointer;
 }
+
+.definition-section {
+  margin: 20px;
+}
+
+.part-of-speech h3 {
+  font-family: "lora";
+  position: relative;
+  overflow: hidden;
+  font-style: italic;
+}
+
+.part-of-speech h3:after {
+  display: inline-block;
+  content: "";
+  height: 1px;
+  background: var(--silver);
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  margin-top: -2px;
+  margin-left: 10px;
+}
