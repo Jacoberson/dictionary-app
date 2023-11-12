@@ -235,3 +235,18 @@ input[type="search"]:not(:focus, :active)::-webkit-search-cancel-button {
   width: 1rem;
   margin-left: -1rem;
 }
+
+.synonyms {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.synonyms h4 {
+  font-weight: 400;
+}
+
+.synonyms p {
+  color: var(--purple);
+  font-weight: 800;
+}

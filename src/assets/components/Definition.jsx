@@ -25,7 +25,7 @@ export default function Definition() {
         </ul>
         <div className="synonyms">
           <h4>Synonyms</h4>
-          <p>electronic keyboard</p>
+          <p className="synonym">electronic keyboard</p>
         </div>
         <div className="source">
           <h4>Source</h4>
