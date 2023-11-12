@@ -159,3 +159,30 @@ input[type="search"]::-webkit-search-results-decoration,
 input[type="search"]:not(:focus, :active)::-webkit-search-cancel-button {
   display: none;
 }
+
+.word-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.word-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.word {
+  font-size: 32px;
+  margin: 0;
+}
+
+.pronunciation {
+  color: var(--purple);
+  font-size: var(--medium-body);
+  font-weight: 500;
+  margin: 0;
+}
+
+.play-button {
+  max-width: 15%;
+}
