@@ -40,6 +40,7 @@
   --small-body: 14px;
 
   --down-arrow: url("./assets/images/icon-arrow-down.svg");
+  --search-icon: url("./assets/images/icon-search.svg");
 }
 
 body {
@@ -62,6 +63,10 @@ body {
   padding-right: 2rem;
   margin-right: 1rem;
   border-right: 3px solid var(--silver);
+}
+
+.font-change:focus {
+  border: 1px solid black;
 }
 
 header {
@@ -122,4 +127,33 @@ input:checked + .slider {
 
 input:checked + .slider:before {
   transform: translateX(26px);
+}
+
+.search-section {
+  text-align: center;
+}
+
+.search {
+  appearance: none;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--silver);
+  background-image: var(--search-icon);
+  background-repeat: no-repeat;
+  background-position-x: 92%;
+  background-position-y: 50%;
+  background-size: 24px;
+  width: 90vw;
+  padding: 10px 20px;
+  font-size: var(--medium-heading);
+  font-weight: 700;
+}
+
+/* clears the ‘X’ from search */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration,
+input[type="search"]:not(:focus, :active)::-webkit-search-cancel-button {
+  display: none;
 }
