@@ -213,3 +213,25 @@ input[type="search"]:not(:focus, :active)::-webkit-search-cancel-button {
   margin-top: -2px;
   margin-left: 10px;
 }
+
+.meaning h4 {
+  color: var(--gray);
+  font-weight: 500;
+}
+
+.meaning ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.meaning ul li {
+  margin: 20px 0;
+}
+
+.meaning ul li:before {
+  content: "\2022"; /* \2022 is the CSS Code/unicode for a bullet */
+  color: var(--purple);
+  display: inline-block;
+  width: 1rem;
+  margin-left: -1rem;
+}
