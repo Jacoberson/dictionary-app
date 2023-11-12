@@ -13,11 +13,11 @@ export default function Header() {
             <option value="Mono">Mono</option>
           </select>
         </div>
-        <div className="toggle">
+        <label className="toggle">
           <input type="checkbox" />
           <span className="slider"></span>
           <img className="moon-icon" src={Moon} alt="moon icon" />
-        </div>
+        </label>
       </div>
     </header>
   );
