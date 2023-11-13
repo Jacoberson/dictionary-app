@@ -94,6 +94,7 @@ a {
   position: absolute;
   left: 90%;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 .toggle {
