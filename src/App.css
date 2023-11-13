@@ -33,11 +33,11 @@
   --purple: #a445ed;
   --red: #ff5252;
 
-  --large-heading: 64px;
-  --medium-heading: 24px;
-  --small-heading: 20px;
-  --medium-body: 18px;
-  --small-body: 14px;
+  --large-heading: 4rem;
+  --medium-heading: 1.5rem;
+  --small-heading: 1.25rem;
+  --medium-body: 1.125rem;
+  --small-body: 0.875rem;
 
   --down-arrow: url("./assets/images/icon-arrow-down.svg");
   --search-icon: url("./assets/images/icon-search.svg");
@@ -45,10 +45,12 @@
 
 body {
   font-family: "inter", "lora", "inconsolata", sans-serif;
+  margin: 0 20px;
 }
 
 header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   margin: 20px;
 }
@@ -56,6 +58,7 @@ header {
 a {
   color: var(--lightest-black);
   text-decoration: underline;
+  word-wrap: break-word;
 }
 
 .font-change {
@@ -64,7 +67,7 @@ a {
   border: none;
   font-family: "inter";
   font-weight: 800;
-  font-size: 16px;
+  font-size: 1rem;
   background: transparent;
   background-image: var(--down-arrow);
   background-repeat: no-repeat;
@@ -83,8 +86,7 @@ a {
 .header-control {
   display: flex;
   align-items: center;
-  position: absolute;
-  right: 3rem;
+  margin-right: 20px;
 }
 
 .moon-icon {
@@ -137,7 +139,7 @@ input:checked + .slider:before {
 }
 
 .search-section {
-  text-align: center;
+  margin: 20px;
 }
 
 .search {
@@ -149,8 +151,8 @@ input:checked + .slider:before {
   background-repeat: no-repeat;
   background-position-x: 92%;
   background-position-y: 50%;
-  background-size: 24px;
-  max-width: 90vw;
+  background-size: 20px;
+  width: 100%;
   padding: 10px 20px;
   font-size: var(--medium-heading);
   font-weight: 700;
@@ -177,7 +179,7 @@ input[type="search"]:not(:focus, :active)::-webkit-search-cancel-button {
 }
 
 .word {
-  font-size: 32px;
+  font-size: 2rem;
   margin: 0;
 }
 
@@ -246,7 +248,7 @@ input[type="search"]:not(:focus, :active)::-webkit-search-cancel-button {
   display: flex;
   align-items: center;
   gap: 20px;
-  border-bottom: 1px solid var(--silver);
+  border-bottom: 1px solid var(--gray);
 }
 
 .synonyms h4,
@@ -273,4 +275,11 @@ input[type="search"]:not(:focus, :active)::-webkit-search-cancel-button {
   position: absolute;
   content: url("./assets/images/icon-new-window.svg");
   padding-left: 5px;
+}
+
+@media only screen and (min-width: 1200px) {
+  body {
+    max-width: 50%;
+    margin: auto;
+  }
 }
