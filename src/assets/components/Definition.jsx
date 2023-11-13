@@ -1,5 +1,3 @@
-import NewWindowIcon from "../images/icon-new-window.svg";
-
 export default function Definition() {
   return (
     <section className="definition-section">
@@ -29,8 +27,14 @@ export default function Definition() {
         </div>
         <div className="source">
           <h4>Source</h4>
-          <p>https://en.wiktionary.org/wiki/keyboard</p>
-          <img src={NewWindowIcon} alt="new window icon" />
+          <p>
+            <a
+              href="https://en.wiktionary.org/wiki/keyboard"
+              target="_blank"
+              rel="noreferrer noopener">
+              https://en.wiktionary.org/wiki/keyboard
+            </a>
+          </p>
         </div>
       </div>
     </section>
