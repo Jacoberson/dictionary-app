@@ -84,6 +84,10 @@ a {
   border: 1px solid black;
 }
 
+.font-change:hover {
+  cursor: pointer;
+}
+
 .header-control {
   display: flex;
   align-items: center;
@@ -151,8 +155,7 @@ input:checked + .slider:before {
   background-color: var(--silver);
   background-image: var(--search-icon);
   background-repeat: no-repeat;
-  background-position-x: 92%;
-  background-position-y: 50%;
+  background-position: 95% 50%;
   background-size: 20px;
   width: 100%;
   padding: 10px 20px;
