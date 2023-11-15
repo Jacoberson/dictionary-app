@@ -1,7 +1,20 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { PropTypes } from "prop-types";
 
-export default function Search() {
+Search.propTypes = {
+  setSearchedWord: PropTypes.func,
+};
+
+export default function Search({ setSearchedWord }) {
   const [searchValue, setSearchValue] = useState("");
+
+  useEffect(() => {
+    setSearchedWord(searchValue);
+  }, [searchValue, setSearchedWord]);
+
+  const handleSearch = event => {
+    setSearchValue(event);
+  };
 
   return (
     <section className="search-section">
@@ -9,7 +22,7 @@ export default function Search() {
         className="search"
         type="search"
         value={searchValue}
-        onChange={e => setSearchValue(e.target.value)}
+        onChange={event => handleSearch(event.target.value)}
       />
     </section>
   );
