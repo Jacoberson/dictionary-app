@@ -43,8 +43,19 @@
   --search-icon: url("./assets/images/icon-search.svg");
 }
 
+.font-inter {
+  font-family: "inter";
+}
+
+.font-lora {
+  font-family: "lora";
+}
+
+.font-inconsolata {
+  font-family: "inconsolata";
+}
+
 body {
-  font-family: "inter", "lora", "inconsolata", sans-serif;
   margin: 0 20px;
 }
 
@@ -65,7 +76,6 @@ a {
   -webkit-appearance: none;
   -moz-appearance: none;
   border: none;
-  font-family: "inter";
   font-weight: 800;
   font-size: 1rem;
   background: transparent;
@@ -208,7 +218,6 @@ input[type="search"]:not(:focus, :active)::-webkit-search-cancel-button {
 }
 
 .part-of-speech h3 {
-  font-family: "lora";
   position: relative;
   overflow: hidden;
   font-style: italic;

@@ -6,12 +6,12 @@ import "./App.css";
 
 function App() {
   return (
-    <>
+    <div id="App" className="font-inter">
       <Header />
       <Search />
       <Word />
       <Definition />
-    </>
+    </div>
   );
 }
 
