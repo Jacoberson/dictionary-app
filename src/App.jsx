@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Header from "./assets/components/Header";
 import Search from "./assets/components/Search";
 import Word from "./assets/components/Word";

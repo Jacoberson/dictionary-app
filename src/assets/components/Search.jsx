@@ -9,7 +9,10 @@ export default function Search({ setSearchedWord }) {
   const [searchValue, setSearchValue] = useState("");
 
   useEffect(() => {
-    setSearchedWord(searchValue);
+    const search = setTimeout(() => {
+      setSearchedWord(searchValue);
+    }, 500);
+    return () => clearTimeout(search);
   }, [searchValue, setSearchedWord]);
 
   const handleSearch = event => {
