@@ -33,17 +33,6 @@ export default function Definition({ dictionary }) {
                   })}
                 </ul>
               </div>
-              <div className="source">
-                <h4>Source</h4>
-                <p>
-                  <a
-                    href="https://en.wiktionary.org/wiki/keyboard"
-                    target="_blank"
-                    rel="noreferrer noopener">
-                    https://en.wiktionary.org/wiki/keyboard
-                  </a>
-                </p>
-              </div>
             </div>
           </div>
         );

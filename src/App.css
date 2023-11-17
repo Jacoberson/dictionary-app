@@ -213,7 +213,8 @@ input[type="search"]:not(:focus, :active)::-webkit-search-cancel-button {
   cursor: pointer;
 }
 
-.definition-section {
+.definition-section,
+.source-section {
   margin: 20px;
 }
 

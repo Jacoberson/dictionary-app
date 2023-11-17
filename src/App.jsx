@@ -3,6 +3,7 @@ import Header from "./assets/components/Header";
 import Search from "./assets/components/Search";
 import Word from "./assets/components/Word";
 import Definition from "./assets/components/Definition";
+import Source from "./assets/components/Source";
 import { getWordInformation } from "./services/dictionary";
 import "./App.css";
 
@@ -26,7 +27,10 @@ function App() {
       <Search setSearchedWord={setSearchedWord} />
       <Word dictionary={dictionary} />
       {dictionary && dictionary.length !== 0 && (
-        <Definition dictionary={dictionary} />
+        <>
+          <Definition dictionary={dictionary} />
+          <Source dictionary={dictionary} />
+        </>
       )}
     </div>
   );
