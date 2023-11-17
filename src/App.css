@@ -270,9 +270,18 @@ input[type="search"]:not(:focus, :active)::-webkit-search-cancel-button {
   font-weight: 400;
 }
 
-.synonyms p {
+.synonyms ul {
+  display: flex;
+  gap: 10px;
+}
+
+.synonyms li {
   color: var(--purple);
   font-weight: 800;
+}
+
+.synonyms ul li::before {
+  display: none;
 }
 
 .source h4 {

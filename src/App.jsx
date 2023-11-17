@@ -25,7 +25,9 @@ function App() {
       <Header />
       <Search setSearchedWord={setSearchedWord} />
       <Word dictionary={dictionary} />
-      <Definition />
+      {dictionary && dictionary.length !== 0 && (
+        <Definition dictionary={dictionary} />
+      )}
     </div>
   );
 }
