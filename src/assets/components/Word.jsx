@@ -6,6 +6,10 @@ Word.propTypes = {
 };
 
 export default function Word({ dictionary }) {
+  const playSound = sound => {
+    new Audio(sound).play();
+  };
+
   return (
     <section className="word-section">
       {dictionary && dictionary.length !== 0 ? (
@@ -20,7 +24,12 @@ export default function Word({ dictionary }) {
                 : dictionary.phonetic && dictionary.phonetic}
             </p>
           </div>
-          <img className="play-button" src={PlayIcon} alt="play button" />
+          <img
+            className="play-button"
+            src={PlayIcon}
+            alt="play button"
+            onClick={() => playSound(dictionary.phonetics[0].audio)}
+          />
         </>
       ) : (
         "No word found"
