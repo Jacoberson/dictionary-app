@@ -27,6 +27,7 @@ export default function Definition({ dictionary }) {
                     return (
                       <li className="synonym" key={index}>
                         {synonym}
+                        {meaning.synonyms.length - 1 !== index && ", "}
                       </li>
                     );
                   })}

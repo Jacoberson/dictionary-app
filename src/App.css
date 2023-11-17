@@ -272,6 +272,7 @@ input[type="search"]:not(:focus, :active)::-webkit-search-cancel-button {
 
 .synonyms ul {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
