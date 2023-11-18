@@ -200,6 +200,18 @@ input[type="search"]:not(:focus, :active)::-webkit-search-cancel-button {
   display: none;
 }
 
+.emoji {
+  font-size: var(--large-heading);
+  margin: 0;
+}
+
+.no-definitions-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 .word-section {
   display: flex;
   justify-content: space-between;
