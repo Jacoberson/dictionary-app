@@ -26,7 +26,11 @@ export default function Search({ setSearchedWord }) {
         type="search"
         value={searchValue}
         onChange={event => handleSearch(event.target.value)}
+        required
       />
+      <span className="error">
+        {!searchValue && "Woops, can't be empty..."}
+      </span>
     </section>
   );
 }
