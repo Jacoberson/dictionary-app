@@ -1,7 +1,7 @@
 import { PropTypes } from "prop-types";
 
 Source.propTypes = {
-  dictionary: PropTypes.oneOf([PropTypes.object, PropTypes.array]),
+  dictionary: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
 };
 
 export default function Source({ dictionary }) {

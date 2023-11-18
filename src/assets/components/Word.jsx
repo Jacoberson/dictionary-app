@@ -1,8 +1,8 @@
-import { PropTypes } from "prop-types";
+import PropTypes from "prop-types";
 import PlayIcon from "../images/icon-play.svg";
 
 Word.propTypes = {
-  dictionary: PropTypes.object,
+  dictionary: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
 };
 
 export default function Word({ dictionary }) {

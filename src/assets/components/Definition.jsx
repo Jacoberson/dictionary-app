@@ -1,7 +1,7 @@
 import { PropTypes } from "prop-types";
 
 Definition.propTypes = {
-  dictionary: PropTypes.oneOf([PropTypes.object, PropTypes.array]),
+  dictionary: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
 };
 
 export default function Definition({ dictionary }) {
