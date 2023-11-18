@@ -13,7 +13,7 @@ export default function Word({ dictionary }) {
 
   const playSound = sound => {
     if (sound) {
-      new Audio(sound).play();
+      new Audio(sound.audio).play();
     } else {
       new Audio(noPronunciation).play();
     }
