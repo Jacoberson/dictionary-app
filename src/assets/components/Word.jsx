@@ -20,7 +20,7 @@ export default function Word({ dictionary }) {
             </h2>
             <p className="pronunciation">
               {dictionary.phonetics.length !== 0
-                ? dictionary.phonetics.find(key => key.text).text
+                ? dictionary.phonetics[0].text
                 : dictionary.phonetic && dictionary.phonetic}
             </p>
           </div>
