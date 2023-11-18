@@ -14,6 +14,8 @@ export default function Header() {
 
   useEffect(() => {
     document.body.className = theme;
+    const searchField = document.querySelector(".search");
+    searchField.className = `search ${theme}`;
   }, [theme]);
 
   const handleTextChange = event => {

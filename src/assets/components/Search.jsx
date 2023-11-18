@@ -22,7 +22,7 @@ export default function Search({ setSearchedWord }) {
   return (
     <section className="search-section">
       <input
-        className="search"
+        className="search light"
         type="search"
         placeholder="Search for any word..."
         value={searchValue}

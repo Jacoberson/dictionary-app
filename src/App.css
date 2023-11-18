@@ -172,7 +172,6 @@ input:checked + .slider:before {
   appearance: none;
   border: 1px solid var(--purple);
   border-radius: 10px;
-  background-color: var(--silver);
   background-image: var(--search-icon);
   background-repeat: no-repeat;
   background-position: 95% 50%;
@@ -181,6 +180,14 @@ input:checked + .slider:before {
   padding: 10px 20px;
   font-size: var(--medium-heading);
   font-weight: 700;
+}
+
+.search.light {
+  background-color: var(--white);
+}
+
+.search.dark {
+  background-color: var(--lighter-black);
 }
 
 .search:hover,
