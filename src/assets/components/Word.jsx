@@ -20,7 +20,7 @@ export default function Word({ dictionary }) {
             </h2>
             <p className="pronunciation">
               {dictionary.phonetics.length !== 0
-                ? dictionary.phonetics[0].text
+                ? dictionary.phonetics.find(key => key.text).text
                 : dictionary.phonetic && dictionary.phonetic}
             </p>
           </div>
@@ -28,7 +28,9 @@ export default function Word({ dictionary }) {
             className="play-button"
             src={PlayIcon}
             alt="play button"
-            onClick={() => playSound(dictionary.phonetics[0].audio)}
+            onClick={() =>
+              playSound(dictionary.phonetics.find(key => key.audio).audio)
+            }
           />
         </>
       ) : (
