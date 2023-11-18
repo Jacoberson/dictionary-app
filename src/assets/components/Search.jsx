@@ -24,6 +24,7 @@ export default function Search({ setSearchedWord }) {
       <input
         className="search"
         type="search"
+        placeholder="Search for any word..."
         value={searchValue}
         onChange={event => handleSearch(event.target.value)}
         required
