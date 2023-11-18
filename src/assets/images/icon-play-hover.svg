@@ -5,7 +5,7 @@
   viewBox="0 0 75 75"
 >
   <g fill="#A445ED" fill-rule="evenodd">
-    <circle cx="37.5" cy="37.5" r="37.5" opacity=".25" />
-    <path d="M29 27v21l21-10.5z" />
+    <circle cx="37.5" cy="37.5" r="37.5" />
+    <path d="M29 27v21l21-10.5z" style="fill: rgb(255, 255, 255)" />
   </g>
 </svg>

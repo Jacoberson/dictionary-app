@@ -1,5 +1,7 @@
+import { useState } from "react";
 import PropTypes from "prop-types";
 import PlayIcon from "../images/icon-play.svg";
+import PlayIconHover from "../images/icon-play-hover.svg";
 import noPronunciation from "../audio/no-pronunciation.mp3";
 
 Word.propTypes = {
@@ -7,6 +9,8 @@ Word.propTypes = {
 };
 
 export default function Word({ dictionary }) {
+  const [isShown, setIsShown] = useState(false);
+
   const playSound = sound => {
     if (sound) {
       new Audio(sound).play();
@@ -31,7 +35,9 @@ export default function Word({ dictionary }) {
           </div>
           <img
             className="play-button"
-            src={PlayIcon}
+            onMouseEnter={() => setIsShown(true)}
+            onMouseLeave={() => setIsShown(false)}
+            src={isShown ? PlayIconHover : PlayIcon}
             alt="play button"
             onClick={() =>
               playSound(dictionary.phonetics.find(key => key.audio) || null)
