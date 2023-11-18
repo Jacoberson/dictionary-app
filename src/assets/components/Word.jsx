@@ -24,9 +24,7 @@ export default function Word({ dictionary }) {
       {dictionary && dictionary.length !== 0 ? (
         <>
           <div className="word-info">
-            <h2 className="word">
-              {dictionary ? dictionary.word : "Word not found"}
-            </h2>
+            <h2 className="word">{dictionary && dictionary.word}</h2>
             <p className="pronunciation">
               {dictionary.phonetics.length !== 0
                 ? dictionary.phonetics[0].text
