@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import PlayIcon from "../images/icon-play.svg";
+import noPronunciation from "../audio/no-pronunciation.mp3";
 
 Word.propTypes = {
   dictionary: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
@@ -7,7 +8,11 @@ Word.propTypes = {
 
 export default function Word({ dictionary }) {
   const playSound = sound => {
-    new Audio(sound).play();
+    if (sound) {
+      new Audio(sound).play();
+    } else {
+      new Audio(noPronunciation).play();
+    }
   };
 
   return (
@@ -29,7 +34,7 @@ export default function Word({ dictionary }) {
             src={PlayIcon}
             alt="play button"
             onClick={() =>
-              playSound(dictionary.phonetics.find(key => key.audio).audio)
+              playSound(dictionary.phonetics.find(key => key.audio) || null)
             }
           />
         </>
