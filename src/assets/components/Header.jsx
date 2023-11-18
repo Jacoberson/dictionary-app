@@ -35,7 +35,8 @@ export default function Header() {
             name="font-change"
             className="font-change"
             onChange={event => handleTextChange(event.target.value)}
-            value={textType}>
+            value={textType}
+            aria-label="Font change">
             <option value="inter">Sans Serif</option>
             <option value="lora">Serif</option>
             <option value="inconsolata">Mono</option>
