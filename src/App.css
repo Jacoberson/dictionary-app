@@ -170,7 +170,7 @@ input:checked + .slider:before {
 
 .search {
   appearance: none;
-  border: none;
+  border: 1px solid var(--purple);
   border-radius: 10px;
   background-color: var(--silver);
   background-image: var(--search-icon);
@@ -181,6 +181,14 @@ input:checked + .slider:before {
   padding: 10px 20px;
   font-size: var(--medium-heading);
   font-weight: 700;
+}
+
+.search:hover,
+.search:focus {
+  cursor: pointer;
+  border: 1px solid var(--purple);
+  caret-color: var(--purple);
+  outline: none;
 }
 
 /* clears the ‘X’ from search */
@@ -276,10 +284,16 @@ input[type="search"]:not(:focus, :active)::-webkit-search-cancel-button {
   border-bottom: 1px solid var(--gray);
 }
 
+.synonym:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .source {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  gap: 20px;
 }
 
 .synonyms h4,
@@ -288,9 +302,7 @@ input[type="search"]:not(:focus, :active)::-webkit-search-cancel-button {
 }
 
 .source h4 {
-  text-decoration: underline;
   margin: 0;
-  padding-right: 10px;
 }
 
 .source p {
