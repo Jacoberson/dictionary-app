@@ -22,16 +22,20 @@ export default function Definition({ dictionary }) {
               </ul>
               <div className="synonyms">
                 <h4>Synonyms</h4>
-                <ul>
-                  {meaning.synonyms.map((synonym, index) => {
-                    return (
-                      <li className="synonym" key={index}>
-                        {synonym}
-                        {meaning.synonyms.length - 1 !== index && ", "}
-                      </li>
-                    );
-                  })}
-                </ul>
+                {meaning.synonyms.length !== 0 ? (
+                  <ul>
+                    {meaning.synonyms.map((synonym, index) => {
+                      return (
+                        <li className="synonym" key={index}>
+                          {synonym}
+                          {meaning.synonyms.length - 1 !== index && ", "}
+                        </li>
+                      );
+                    })}
+                  </ul>
+                ) : (
+                  <p>No synonyms found</p>
+                )}
               </div>
             </div>
           </div>
