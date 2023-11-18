@@ -4,6 +4,7 @@ import Moon from "../images/icon-moon.svg";
 
 export default function Header() {
   const [textType, setTextType] = useState("inter");
+  const [theme, setTheme] = useState("light");
 
   useEffect(() => {
     const app = document.getElementById("App");
@@ -11,8 +12,16 @@ export default function Header() {
     app.classList.add(`font-${textType}`);
   }, [textType]);
 
+  useEffect(() => {
+    document.body.className = theme;
+  }, [theme]);
+
   const handleTextChange = event => {
     setTextType(event);
+  };
+
+  const toggleTheme = () => {
+    theme === "light" ? setTheme("dark") : setTheme("light");
   };
 
   return (
@@ -31,7 +40,7 @@ export default function Header() {
           </select>
         </div>
         <label className="toggle">
-          <input type="checkbox" />
+          <input type="checkbox" onClick={toggleTheme} />
           <span className="slider"></span>
           <img className="moon-icon" src={Moon} alt="moon icon" />
         </label>
