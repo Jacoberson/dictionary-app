@@ -6,7 +6,6 @@ This is a solution to the [Dictionary web app challenge on Frontend Mentor](http
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -29,10 +28,6 @@ Users should be able to:
 - Switch between light and dark themes
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
-
-### Screenshot
-
-![Screenshot](https://github.com/Jacoberson/dictionary-app/assets/58759808/5c90f869-1e87-4de6-9b6e-10eb59429766)
 
 ### Links
 
