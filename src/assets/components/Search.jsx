@@ -27,6 +27,7 @@ export default function Search({ setSearchedWord }) {
         placeholder="Search for any word..."
         value={searchValue}
         onChange={event => handleSearch(event.target.value)}
+        spellCheck={false}
         required
       />
       <span className="error">
