@@ -58,4 +58,4 @@ I'm still working towards becoming more proficient in responsive pages for all d
 - [CSS Tricks - Guide to Dark Mode]([https://www.example.com](https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/)) - This helped me implement dark mode easily.
 
 ## Author
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Jacoberson)
+- Frontend Mentor - [@jacoberson](https://www.frontendmentor.io/profile/Jacoberson)
